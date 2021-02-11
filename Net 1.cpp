@@ -1,11 +1,3 @@
-/*
-	Реализация связи между двумя ПК через последовательный порт
-	
-	Сделал:
-	Балушкин Богдан
-	ПЗ1812
-*/
-
 #include <Windows.h>
 #include <iostream>
 #include <memory>
@@ -13,7 +5,6 @@
 
 int main(int argc, char* argv[])
 {
-	// Выбираем порт
 	int choose;
 	std::cout << "[1] - COM1" << std::endl
 		<< "[2] - COM2" << std::endl
@@ -33,7 +24,7 @@ int main(int argc, char* argv[])
 		std::cout << "Error: " << Exception << std::endl;
 		return 0;
 	}
-	// Выбираем действие
+
 	try
 	{
 		do
